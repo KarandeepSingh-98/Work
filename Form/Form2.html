@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <body>
+        <fieldset>
+            <legend>Enquary</legend>
+            Name: <input type="text" placeholder="Enter your name" required>
+            Email: <input type="email" placeholder="Enter your email" required>
+            Password: <input type="password" placeholder="Enter your password" required>
+            <br>
+            Gender:
+            <input type="radio" value="M" name="Gender"> Male
+            <input type="radio" value="F" name="Gender"> Female
+            <input type="radio" value="Other" name="Gender"> Other
+            <br><br>
+
+            <fieldset>
+                <legend>Date of Birth</legend>
+                Day: <input type="date"><br>
+                Day & Time <input type="datetime-local"><br>
+                Month: <input type="month"><br>
+                Week: <input type="week">
+            </fieldset>
+
+            <br><br>
+
+            Age: <input type="number" max="100" min="1" placeholder="Enter your age" required>
+            <br><br>
+
+            Course: <input type="text"  placeholder="Enter your Course" autofocus="" list="course">
+            <datalist id="course">
+                <option value="HTML">HTML</option>
+                <option value="CSS"></option>
+                <option value="JavaScript">HTML</option>
+                <option value="PHP">HTML</option>
+            </datalist>
+
+            Hobbies: 
+            <input type="checkbox", name="dance[]", checked="">Dancing
+            <input type="checkbox", name="swimning[]">Swimming
+            <input type="checkbox", name="reading[]">Reading
+            <br>
+            <br>
+            Country:
+            <select>
+                <option>Select your Country</option>
+                <optgroup label="Asia">
+                    <option value="india">India</option>
+                    <option value="nepal">Nepal</option>
+                </optgroup>                                                           
+                <option value="usa">USA</option>
+                <option value="Canada">Canada</option>
+            </select>
+            <br>
+            <br>
+            Image:
+            <input type="file", name="image">
+            <br>
+            <br>
+            Color: <input type="color", readonly="">
+            <br>
+            <br>
+            <input type="submit", value="Send" ,name="Send"/>
+            <input type="reset", value="Reset", name="Reset"/>
+        </fieldset>
+        
+        Secret: <input type="hidden", disabled="">
+            
+
+    </body>
+</html>
