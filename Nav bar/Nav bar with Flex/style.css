@@ -1,0 +1,127 @@
+
+.main{
+    width: 100%;
+    height: 200px;
+    margin-top: 15%;
+    border-radius: 10px;
+    background: url(back.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 20px white;
+    
+}
+
+.Nav_Bar{
+    height: 95px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 35px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px white;
+    background: transparent;
+}
+
+.Nav_Bar .logo{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 20px white;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.logo:hover{
+transform: scale(1.2);
+
+}
+.logo i{
+    font-size: 58px;
+    color: #e4e4e4;
+    text-shadow: 0 0 15px rgb(164, 161, 161);
+    border: none;
+    outline: none;
+    transition: .5s ease;
+}
+
+.logo i:hover{
+    transform: scale(1.2);
+}
+
+.Nav_Bar .links{
+    width: 700px;
+    height: 60px;
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 30px;
+    box-shadow: 0 0 20px white;
+    transition: .5s ease;
+    
+}
+
+.links:hover{
+transform: scale(1.2);
+
+}
+
+.links a{
+    position: relative;
+    font-size: 25px;
+    text-decoration: none;
+    color: #e4e4e4;
+    font-weight: 500;
+    margin-right:10px;
+    text-shadow: 0 0 15px rgb(164, 161, 161);
+}
+
+.links a::after{
+    content: '';
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background-color: #e4e4e4;
+    bottom: -6px;
+    opacity: 0;
+    transform: translatey(6px);
+    transition: .5s ;
+}
+
+.links a:hover::after{
+    opacity: 1;
+    transform: translatey(0px);
+}
+
+.Nav_Bar .name{
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e4e4e4;
+    font-size: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 20px white;
+    text-shadow: 0 0 15px rgb(164, 161, 161);
+    transition: .5s ease;
+}
+
+.name:hover{
+    transform: scale(1.2);
+
+}
+.name:hover{
+    transform: scale(1.2);
+
+}
+
+    

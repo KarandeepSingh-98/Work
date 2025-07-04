@@ -1,0 +1,65 @@
+.Nav_Bar{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px; 
+    justify-items: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 90px;
+    box-shadow: 0 0 30px;
+    
+}
+
+.logo{
+    width: 70px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 60px;
+    transition: .5s ease;
+    box-shadow: 0 0 30px;
+}
+.logo:hover{
+    transform: scale(1.2);
+    
+}
+
+.links{
+    width:450px ;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    transition: .5s ease;
+    box-shadow: 0 0 30px;
+}
+.links:hover{
+    transform: scale(1.2);
+    
+}
+
+.links a{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.name{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 25px;
+    transition: .5s ease;
+    box-shadow: 0 0 30px;
+}
+
+.name:hover{
+    transform: scale(1.2);
+}
