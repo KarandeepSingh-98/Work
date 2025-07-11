@@ -1,0 +1,62 @@
+  <!DOCTYPE html>
+<html >
+<head>
+    <title>Work-1</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    console.log(" Q1. Write a function usinf map() that returns a new array where each number is Squared.");
+    
+    const num = [1,2,3,4,5];
+    const squr = num.map(num => num * num);
+    console.log(squr);
+
+    //--------------------------------------------------------------------------------------------------------------------------------
+
+    console.log("Q2. Use filter() to retune a new array with only ages 18 and above.");
+
+    const ages = [12,25,30,17,40,15];
+    const Result = ages.filter(age => age >= 18);
+    console.log(Result);
+
+    //--------------------------------------------------------------------------------------------------------------------------------
+
+    console.log("Q3. Use reduce() to calculate the final account balance after all transactions. ");
+
+    const transactions =[100,-20, -30,10];
+    const total = transactions.reduce((sum, transactions) => sum + transactions,0);
+    console.log(total);
+
+    //--------------------------------------------------------------------------------------------------------------------------------
+
+    console.log("Q4. Write a chain of method (filter, map, reduce) to calculate the total price of product that cost more than 500rs.")
+
+    const Product = [
+        {name: "Laptop", price:1000},
+        {name: "Phone", price:700},
+        {name: "Headphones", price:500},
+        {name: "Tablet", price:400}
+    ];
+
+    const result = Product.filter(product => product.price > 500).map(product => product.price).reduce((sum , price) => sum + price,0);
+    console.log(result);
+
+    //--------------------------------------------------------------------------------------------------------------------------------
+
+    console.log("Q5. Use map() to transform this into an array of full names. ");
+
+    const names =[
+        {firstname:"Karandeep", lastname:" Singh"},
+        {firstname:"Jashanpreet", lastname:" Singh"},
+        {firstname:"Manandeep", lastname:" Singh"},
+        {firstname:"kingshook", lastname:" Das"}
+    ];
+
+    const fullName = names.map(name => name.firstname + "" + name.lastname);
+    console.log(fullName);
+
+</script>
+</html>
