@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Work - 3</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; margin: 5%;">
+
+    <table style="border: 1px solid; padding: 5px; font-size: 25px;">
+        <tr>
+            <th style="border: 1px solid;">Normal function</th>
+            <th style="border: 1px solid;">Fat Arrow function</th>
+        </tr>
+
+        <tr>
+            <td>
+                1. Normal function are defined by using the "funtion" keyword.
+            </td>
+
+            <td>
+                1. Fat Arrow funtion are defined by using "=>" syntax.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                2. In normal funtion, we can call a funtion before they are defined in the code. 
+            </td>
+            <td>
+                2. In Fat Arror funtion, we can not call a funtion before they are defined in the code. 
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                3. We can pass duplicate parameters in the normal funtion
+            </td>
+            <td>
+                3. We can not pass duplicate parameters in the Fat Arrow funtion
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                4. We can use this keyword refer to the object that's call the funtion in the normal funtion
+            </td>
+            <td>
+                4. We can use Lexically this that inherited from the surrounding scope, not the funtion itself.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                5. we can use new keyword to create the constructors in normal funtion.  
+            </td>
+            <td>
+                5. In Fat Arrow funtion, they can not support constructors , they give an error when we use new keyword to create constructor.  
+            </td>
+        </tr>
+
+    </table>
+    
+</body>
+<script>
+
+    // Main Array
+
+    const arr = [1,2,3,4,5];
+
+    // 1. Map Funtion  
+
+    function valueDouble(arr) {
+
+        return arr.map(num => num * 2);
+    }
+
+    console.log(valueDouble(arr));
+
+    //--------------------------------------------------------
+
+    // 2. Filter funtion
+    
+    
+    function filter50(arr){
+        return valueDouble(arr).filter(num => num == 50); 
+    }
+    
+    console.log(filter50(arr));
+
+    //--------------------------------------------------------
+
+    // 3. Reduce funtion
+    
+    
+    function sum(arr){
+        return arr.reduce((sum, num) => sum + num,0);
+    }
+    console.log(sum(arr));
+    
+    function multiply(arr){
+        return arr.reduce((multi, num) => multi * num,1);
+        
+    }
+    console.log(multiply(arr));
+    
+    function divide(arr){
+        return arr.reduce((divide, num) => divide / num, 2);
+        
+    }
+    console.log(divide(arr));
+
+    //--------------------------------------------------------
+
+    // 4. All in one funtion 
+
+
+    function operation(arr){
+
+        return arr.map(num => num * 2)
+        .filter(num => num % 2 ==0)
+        .reduce((sum, num) => sum + num,0); 
+
+    }
+    
+    console.log(operation(arr));
+    
+
+</script>
+</html>
