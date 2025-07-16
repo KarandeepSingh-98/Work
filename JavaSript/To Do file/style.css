@@ -1,0 +1,135 @@
+body{
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:cadetblue;
+    
+}
+
+.main{
+    height: 500px;
+    width: 700px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color:antiquewhite;
+    overflow: hidden;
+}
+
+.main h1{
+    text-align: center;
+    font-size: 45px;
+    text-decoration: underline;
+    text-shadow: 0  0 5px rgb(0, 0, 0, 1); 
+}
+
+.main .input{
+    margin-left: 10%;
+}
+
+.input{
+    width:500px ;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px ;
+    background-color: aliceblue;    
+    box-shadow: 0 0 10px rgb(0, 0, 0, 1 );
+    overflow: hidden;
+}
+
+input{
+    flex: 1;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 20px;
+}
+
+button{
+    width: 150px;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color:red;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 1 );
+    font-size: 20px;
+
+}
+
+ul li{
+    list-style: none;
+    padding: 12px 10px 12px 50px ;
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
+ul li::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(checkbox-regular-24.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 8px;
+    
+}
+
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    content: '';
+    background-image: url(checkbox-checked-regular-24.png);
+    
+}
+
+ul li span{
+    position: absolute;
+    right:50px;
+    top:5px;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    
+}
+
+ul li span:hover{
+    cursor: pointer;
+    background: #969798;
+}
+
+ul li h2{
+    position: absolute;
+    right:110px;
+    width: 50px;
+    height: 30px;
+    line-height: 40px;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    
+}
+
+ul li h2:hover{
+    cursor: pointer;
+    background: #969798;
+}
+
